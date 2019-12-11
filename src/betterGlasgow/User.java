@@ -13,6 +13,7 @@ public class User {
     	setPass();
     }
     
+    
     //input.close() causing error.
     public void setUser() {
     	System.out.println("Enter student number (E.g. 2987654): ");

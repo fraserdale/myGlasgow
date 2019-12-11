@@ -10,17 +10,13 @@ public class Runner {
 		//https://www.intertech.com/Blog/a-static-method-should-be-accessed-in-a-static-way/
 		//create new user 
 		User me = new User();
-		try {
-			List<HashMap<String,String>> myGrades = new Grades().getGrades(me);
-			Integer GPA = new Grades().getGPA(myGrades);
-			//print user grade, make prettify function with (table?)
-			//print GPA
-			System.out.println(myGrades);
-			System.out.println(GPA);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Grades myGrades = new Grades(me);
+		Integer GPA = myGrades.getGPA();
+		//print user grade, make prettify function with (table?)
+		//print GPA
+		myGrades.prettify();
+		//System.out.println(myGrades);
+		System.out.println(GPA);
 	}
 
 }
