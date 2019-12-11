@@ -34,9 +34,9 @@ public class User {
     	return Base64.getEncoder().encodeToString(plainCreds.getBytes());
     }
     
+    
     /*public static void main(String[] args) {
     	UserCredentials mine = new UserCredentials();
     	System.out.println(mine.getCreds());
     }*/
 }
-

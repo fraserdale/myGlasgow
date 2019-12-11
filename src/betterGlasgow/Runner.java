@@ -1,9 +1,5 @@
 package betterGlasgow;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-
 public class Runner {
 
 	public static void main(String[] args) {
@@ -11,12 +7,11 @@ public class Runner {
 		//create new user 
 		User me = new User();
 		Grades myGrades = new Grades(me);
-		Integer GPA = myGrades.getGPA();
+		Integer gpa = myGrades.getGPA();
 		//print user grade, make prettify function with (table?)
 		//print GPA
 		myGrades.prettify();
 		//System.out.println(myGrades);
-		System.out.println(GPA);
+		System.out.println(gpa);
 	}
-
 }
